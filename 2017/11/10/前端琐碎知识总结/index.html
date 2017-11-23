@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://codefarmerricky.github.io/2017/11/10/前端琐碎知识总结/index.html">
 <meta property="og:site_name" content="Code Farmer Ricky">
 <meta property="og:description" content="做项目的时候前端遇到的一些前端的小问题以及解决方案如下 1.关于Jquery data-xx的方法，这个xx必须是小写，这是针对HTML5，否则得到的值将会是undefined 2.Understand Normalize.css and Reset 3.line-height: em vs number, em is the parent font-size×number, number is">
-<meta property="og:updated_time" content="2017-11-14T02:49:59.911Z">
+<meta property="og:updated_time" content="2017-11-23T08:23:43.196Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端琐碎知识总结">
 <meta name="twitter:description" content="做项目的时候前端遇到的一些前端的小问题以及解决方案如下 1.关于Jquery data-xx的方法，这个xx必须是小写，这是针对HTML5，否则得到的值将会是undefined 2.Understand Normalize.css and Reset 3.line-height: em vs number, em is the parent font-size×number, number is">
@@ -191,7 +191,11 @@
 <p>Http是一种无状态的协议</p>
 <p>GET请求 幂等</p>
 <p>POST请求</p>
-
+<p>4.Safari 会默认为textbox加一个box-shadow解决这个问题只需要加一个样式：-webkit-appearance: none;</p>
+<p>5.Global是ECMAScript一个特别的对象，所有全局作用域定义的变量和函数都是Global对象的属性和方法，Web浏览器将Global作为window对象的一部分加以实现</p>
+<p>6.eval() 是一个JavaScript字符串解析器，eval()是没有返回值的，所以返回接受的话回事undefined， 有可能导致程序的安全性，比如说代码注入</p>
+<p>7.执行npm命令遇到错误, 大多数是因为node的环境变量出现了问题，默认只需要执行：SET PATH=C:\Program Files\Nodejs;%PATH% 即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">Error: Cannot find module &apos;C:\Program Files\nodejs\node_modules\npm\bin\node_modules\npm\bin\npm-cli.js&apos;</span><br><span class="line"></span><br><span class="line">at Function.Module._resolveFilename (module.js:338:15)</span><br><span class="line">at Function.Module._load (module.js:280:25)</span><br><span class="line">at Function.Module.runMain (module.js:497:10)</span><br><span class="line">at startup (node.js:119:16)</span><br><span class="line">at node.js:906:3</span><br></pre></td></tr></table></figure>
       
 
       
