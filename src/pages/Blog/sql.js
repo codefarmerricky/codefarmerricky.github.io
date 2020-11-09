@@ -15,6 +15,8 @@ query Blog($pageFirst: Int, $pageLast: Int, $pageBefore: String, $pageAfter: Str
       edges {
         cursor
         node {
+          label
+          milestones
           title
           url
           createdAt

@@ -31,7 +31,7 @@ const httpLink = new HttpLink({
 });
 const client = new ApolloClient({
   clientState: { resolvers, defaults, cache, typeDefs },
-  cache, // 本地数据存储, 暂时用不上
+  cache, // local data storage, doesn't use it temporary
   link: authLink.concat(httpLink)
 });
 
